@@ -1,0 +1,185 @@
+/* Fonte base e fundo mágico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #0a0a1a, #1a1a2e);
+  color: #ffffff;
+  line-height: 1.6;
+  padding-top: 80px; /* espaço para navbar fixa */
+}
+
+/* Navbar fixa no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.9);
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.navbar a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ffcc00;
+}
+
+/* Header com vídeo */
+.header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.8rem;
+  color: #ffcc00;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Seções */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.2rem;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffcc00;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffcc00;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Imagem do perfil */
+.section img {
+  display: block;
+  margin: 2rem auto;
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Formulário de contato */
+form {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  resize: none;
+  background-color: #1a1a2e;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background-color: #ffcc00;
+  border: none;
+  color: #111;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    margin: 0 0.7rem;
+    font-size: 0.95rem;
+  }
+}
